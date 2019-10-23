@@ -1,0 +1,604 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 95%;
+}
+
+
+/*<------------------ END CSS RESET --------------------->*/
+/*<------------------ Start Font --------------------->*/
+
+ul li, li p /* etc */ { 
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+html {
+    font-family: 'Yantramanav', Arial, sans-serif;
+    color: #f0ead6;
+}
+
+header h1 {
+    position: relative;
+    font-size: 3em;
+    top: 20px;
+    left: 10px;
+    color: #f0ead6;
+}
+
+h2{
+    font-family: 'Yantramanav', Georgia, sans-serif;
+    color: #f0ead6;
+    font-size: 2em;
+    padding: 5px 0px 5px 10px;
+}
+
+h3{
+    font-family: 'Yantramanav', Georgia, sans-serif;
+    color: #f0ead6;
+    font-size: 2em;
+    line-height: 20px;
+    padding: 10px 0px 10px 10px;
+    background: #800000;
+    clear: both;
+}
+
+p, .cell{
+    font-family: 'Yantramanav', Arial, sans-serif;
+    color: #f0ead6;
+    font-size: 1.5em;
+    line-height: 19px;
+    margin: 0px 0px 10px 10px;
+}
+
+a {
+    font-family: 'Yantramanav', Arial, sans-serif;
+    font-size: 1.5em;
+    color: #f0ead6;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+ul {
+    font-family: 'Yantramanav', Arial, sans-serif;
+    color: #f0ead6;
+    font-size: 1.5em;
+}
+
+table {
+    font-family: 'Yantramanav', Arial, sans-serif;
+    color: #f0ead6;
+    font-size: 1.5em;
+    line-height: 19px;
+}
+
+button {
+    font-family: 'Yantramanav', Arial, sans-serif;
+    color: #f0ead6;
+    font-size: 1.5em;    
+}
+
+.content ul {
+    list-style-type: disc;
+}
+
+/*<------------------ End font --------------------->*/
+/*<------------------ Start images, borders and backgrounds--------------------->*/
+
+body {
+    background-color: #2d363b;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    height: 100px;
+}
+
+img.logo {
+    float: left;
+    width: 100px;
+    z-index: 5;
+}
+
+#landing {
+    margin-top: 100px;
+}
+
+.critical_info {
+    padding-left: 100px;
+}
+
+.section-container {
+    background: #800000;
+    padding: 5px 5px 5px 10px;    
+    display: table;
+    clear: both;
+    width: 85%;
+    margin: 1% auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    text-align: center;
+}
+
+.section {
+    background: #3a0000;
+    border-radius: 5px;
+    width: 95%;
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+}
+
+.section img {
+    max-width: 90%;
+    padding: 0 5% 0 5%;
+}
+
+.section button {
+    display: inline-block;
+    margin: 0 5% 0 5%;
+    font-size: 1em;
+}
+
+footer {
+    background: #918787;
+    clear: both;
+}
+footer p {
+    color: #f0ead6;
+}
+
+td, th {
+    padding: 3px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+button {
+    background: #b36b00;
+    display: block;
+    padding: 2px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+button:hover {
+    background: #804d00;
+}
+
+/*<------------------ End Positioning --------------------->*/
+/*<------------------ Start Navigation --------------------->*/
+#nav {
+	width: 100%;
+	float: left;
+	margin: 0 0 1em 0;
+	padding: 0;
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #ccc;  }
+#nav ul {
+	list-style: none;
+	width: 800px;
+	margin: 0 auto;
+	padding: 0; }
+#nav li {
+	float: left; }
+#nav li a {
+	display: block;
+	padding: 8px 15px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #069;
+	border-right: 1px solid #ccc; }
+#nav li:first-child a {
+	border-left: 1px solid #ccc; }
+#nav li a:hover {
+	color: #c00;
+	background-color: #fff; }
+#topnav {
+    height: 25px;
+    position: fixed;
+    z-index: 1;
+    top: 200px;
+    left: 0;
+}
+
+#topnav ul {
+    float: right;
+    list-style-type: none;
+    left: 0;
+}
+
+
+/*<------------------ End Navigation --------------------->*/
+
+/*<------------------ Start Home page --------------------->*/
+
+#account {
+    padding: 5px 5px 5px 5px ;
+    width: 95%;
+}
+
+#account table {
+    width: 95%;
+}
+
+#information td {
+    max-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#information td:hover {
+    overflow: visible;
+}
+
+#information button {
+    font-size: 1em;
+}
+
+#character-select {
+    padding: 5px 5px 5px 5px;
+    width: 95%;
+    height: 100%;
+}
+
+#character {
+    overflow: hidden;
+}
+
+#character img {
+    max-height: 150px;
+    margin: 0px 0px 0px 10px;
+    float: left;
+    clear: none;
+}
+
+.character-buttons {
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.character-buttons button {
+    margin: 10px auto 10px auto;
+    padding: 3px;
+    display: block;
+}
+
+/*<------------------ End Home page --------------------->*/
+/*<------------------ Start constant div --------------------->*/
+#constant {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/grid.png");
+    z-index: 0;
+    box-shadow: 5px 5px 10px #3b3c3d;
+}
+
+#constant table {
+    margin: 0px 0px 0px 35px;
+    max-width: calc(100vw - 40px) !important;
+    color: #3b3c3d;
+}
+
+#constant a {
+    color: #3b3c3d;
+    font-size: 1.1em;
+}
+
+#PP {
+    width: 25%;
+    font-size: 2.5em;
+    background: url("../images/PP.png") center no-repeat;
+    background-size: contain;
+}
+#DC {
+    width: 25%;
+    font-size: 2.5em;
+    background: url("../images/DC.png") center no-repeat;
+    background-size: contain;
+}
+#PI {
+    width: 25%;
+    font-size: 2.5em;
+    background: url("../images/PI.png") center no-repeat;
+    background-size: contain;
+}
+#HP {
+    width: 50%;
+    height: 105px;
+    font-size: 1.7em;
+    background: url("../images/HP.png") center no-repeat;
+    background-size: contain;
+}
+#AC {
+    width: 25%;
+    font-size: 2.5em;
+    background: url("../images/AC.png") center no-repeat;
+    background-size: contain;
+}
+
+/*<------------------ End constant div --------------------->*/
+/*<------------------ Start Small screen specific queries --------------------->*/
+@media screen and (max-width: 480px) {
+    
+    #hideable {
+        display: none;
+    }    
+    /*For sections that can display as 1 columns*/
+    .section.s {
+        width: 90%;
+    }    
+
+    .home-buttons {
+        margin-top: 150px;
+        clear: both;
+    }
+}
+
+@media screen and (max-height: 350px){
+    #topnav {
+        position: absolute;    
+    }
+}
+
+/*<------------------ End Small screen specific queries --------------------->*/
+/*<------------------ Start Medium screen specific queries --------------------->*/
+@media screen and (min-width: 481px) and (max-width: 800px) {
+    /*For sections that can display as 2 columns*/
+    .section.m{
+        float: left;
+        width: 45%;
+        clear: none;
+    }
+
+    .section button {
+        margin: 0 5% 0 5%;
+    }
+
+    button.collapsible {
+        font-size: 1.7em;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .home-logo {
+        width: 300px;
+        height: 300px;
+    }
+
+    #landing {
+        margin-top: 250px;
+    }
+
+    img.login {
+        width: 300px;
+    }
+
+    .home-buttons {
+        margin-top: 250px;
+        clear: both;
+    }
+
+    .character-buttons {
+        display: block;
+        position: relative;
+        text-align: center;
+        font-size: 1.2em;
+    }
+    
+    .character-buttons button {
+        margin: 10px auto 10px auto;
+        padding: 3px;
+        display: block;
+    }
+
+    @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+        #eye-left {
+            position: relative;
+            left: 25%;
+            top: 130px;
+        }
+        
+        #eye-right {
+            position: relative;
+            left: 43%;
+            top: 130px;
+        }
+     }
+
+}
+/*<------------------ End Medium screen specific queries --------------------->*/
+/*<------------------ Start Large screen specific queries --------------------->*/
+@media screen and (min-width: 801px)  {
+    /*For sections that only have 2 parts on wider screens*/
+    .section.ml{
+        float: left;
+        width: 45%;
+        clear: none;
+    }
+    /*For sections that can display as 3 columns*/
+
+    img.logo {
+        float: left;
+        width: 200px;
+        height: 200px;
+        background: #3b3c3d;
+        z-index: 5;
+    }
+
+    #landing {
+        margin-top: 150px;
+    }
+
+    #topnav {
+        height: 450px;
+        width: 50px;
+        top: 200px;
+    }   
+    
+    #expandedtopnav {
+        height: 450px;
+        top: 200px;
+    }
+    
+    #expandedtopnav ul li a{
+        color: #3b3c3d;
+    }
+    
+    .icon_small {    
+        max-width: 50px;
+    }
+    
+    .icon_small.selected {
+        background-color: #b36b00;
+    }
+
+    header {
+        height: 200px;
+    }
+
+    .home-logo {
+        width: 300px;
+        height: 300px;
+    }
+
+    img.login {
+        width: 300px;
+    }
+
+    .home-buttons {
+        margin-top: 150px;
+        clear: both;
+    }
+
+    @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+        #eye-left {
+            position: relative;
+            left: 25%;
+            top: 130px;
+        }
+        
+        #eye-right {
+            position: relative;
+            left: 43%;
+            top: 130px;
+        }
+     }
+
+}
+/*<------------------ End Large screen specific queries --------------------->*/
+/*<------------------ Start Desktop screen specific queries --------------------->*/
+@media screen and (min-width: 1367px) {
+    
+    .section.l{
+        float: left;
+        width: 29%;
+    }
+
+    .home-logo {
+        width: 400px;
+        height: 400px;
+    }
+
+    #landing {
+        margin-top: 300px;
+    }
+
+    img.login {
+        width: 400px;
+    }
+
+    .home-buttons {
+        margin-top: 400px;
+        clear: both;
+    }
+
+    p {
+        font-size: 1.7em;
+    }
+
+    @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+        #eye-left {
+            position: relative;
+            left: 25%;
+            top: 160px;
+        }
+        
+        #eye-right {
+            position: relative;
+            left: 43%;
+            top: 160px;
+        }
+     }
+
+}
+/*<------------------ End Desktop screen specific queries --------------------->*/
+
+
+/*<------------------ Temp landing page --------------------->*/
+
+h4 {
+    font-family: 'Yantramanav', Georgia, sans-serif;
+    color: #f0ead6;
+    font-size: 3em;
+    clear: none;
+}
+
+
+
+
+
+/*<------------------ Temp landing page --------------------->*/

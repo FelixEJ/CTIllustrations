@@ -1,0 +1,279 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 95%;
+}
+
+/*<------------------ END CSS RESET --------------------->*/
+
+/*<------------------ Start Font --------------------->*/
+
+ul li, li p /* etc */ { 
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+html {
+    font-family: 'Yantramanav', Arial, sans-serif;
+    color: #f0ead6;
+    max-width: 100%;
+}
+
+header h1 {
+    position: relative;
+    font-size: 3em;
+    top: 20px;
+    left: 10px;
+    color: #f0ead6;
+    padding-top: 5%;
+}
+
+h2{
+    font-family: 'Yantramanav', Georgia, sans-serif;
+    color: #f0ead6;
+    font-size: 2em;
+    padding: 5px 0px 5px 10px;
+    overflow: auto;
+}
+
+/*<------------------ End Font --------------------->*/
+
+/*<------------------ Start images, borders and backgrounds--------------------->*/
+
+body {
+    background-color: #2d363b;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+}
+
+img.logo {
+    float: left;
+    width: 100px;
+    z-index: 5;
+}
+
+img.icon {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+
+.social_links {
+    float: left;
+    position: relative;
+    left: -50%;
+}
+
+.social_container {
+    float: left;
+    position: relative;
+    left: 50%;
+}
+
+.wrapper {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    max-width: 960px;
+}
+
+/*<------------------ End images, borders and backgrounds--------------------->*/
+
+/*<------------------ Start nav--------------------->*/
+
+nav {    
+    width: 100%;
+	background-color: #f2f2f2;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+nav a {
+	float: left;
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    width: 50%; 
+    text-align: center;
+}
+nav a:hover {
+    background-color: #54686e;
+}
+  
+  /* Style the current/active link */
+nav a.active {
+    background-color: #93b7be;
+}
+
+/*<------------------ End nav--------------------->*/
+
+/*<------------------ Start social sidebar--------------------->*/
+
+.social-sidebar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.social-sidebar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+
+.social-sidebar a:hover {
+    background-color: #000;
+}
+  
+.facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.instagram {
+    background: #f56040;
+    color: white;
+}  
+
+.content {
+    margin-left: 75px;
+    font-size: 30px;
+}
+
+
+/*<------------------ End social sidebar--------------------->*/
+
+/*<------------------ Start gallery--------------------->*/
+
+.gallery {
+    border: 10px solid #54686e;
+    min-height: 500px;
+    background: #54686e;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery .social_links {
+    position: relative;
+    top: -50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    max-width: 130px;
+}
+
+.desc_title {
+    padding: 15px;
+    text-align: center;
+    background: #93b7be;
+    color: #161616;
+    font-size: 1.5em;
+}
+
+.desc_body {
+    padding: 15px;
+    text-align: center;
+    background: #93b7be;
+    color: #161616;
+    font-size: 0.7em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 33.3%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+
+    .gallery {
+        height: 25%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+
+    .gallery {
+        height: 25%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*<------------------ End gallery--------------------->*/
