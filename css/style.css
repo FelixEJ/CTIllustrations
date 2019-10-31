@@ -120,11 +120,9 @@ img.icon {
 }
 
 .wrapper {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: auto;
     width: 90%;
     max-width: 960px;
-    text-align: center;
 }
 
 /*<------------------ End images, borders and backgrounds--------------------->*/
