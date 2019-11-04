@@ -77,7 +77,16 @@ h2{
     color: #202020;
     font-size: 2em;
     padding: 5px 0px 5px 10px;
-    overflow: auto;
+    overflow: visible;
+}
+
+h3{
+    font-family: 'Yantramanav', Georgia, sans-serif;
+    color: #202020;
+    font-size: 1.5em;
+    padding: 5px 0px 5px 10px;
+    overflow: visible;
+    text-align: center;
 }
 
 /*<------------------ End Font --------------------->*/
@@ -121,7 +130,7 @@ img.icon {
 
 .wrapper {
     margin: auto;
-    width: 90%;
+    width: 100%;
     max-width: 960px;
 }
 
@@ -204,10 +213,16 @@ nav a.active {
     border: 10px solid #bac0c2;
     background: #bac0c2;
     text-align: center;
-    height: 300px;
+    height: 500px;
 }
 
 .gallery img {
+    max-width: 90%;
+    max-height: 90%;    
+    transition: .5s;
+}
+
+.gallery img:hover {
     max-width: 95%;
     max-height: 95%;
     box-shadow: -5px 10px 8px #535353;
@@ -251,17 +266,17 @@ nav a.active {
 .responsive {
     padding: 0 6px;
     float: left;
-    width: 33.3%;
+    width: 50%;
 }
 
 @media only screen and (max-width: 800px) {
     .responsive {
-        width: 49.99999%;
+        width: 100%;
         margin: 6px 0;
     }
 
     .gallery {
-        height: 25%;
+        height: 500px;
     }
 }
 
@@ -271,7 +286,7 @@ nav a.active {
     }
 
     .gallery {
-        height: 25%;
+        height: 300px;
     }
 }
 
@@ -283,7 +298,7 @@ nav a.active {
 /*<------------------ End gallery--------------------->*/
 
 .contact_blurb {
-    width: 60%;
+    width: 70%;
     text-align: center;
     margin: auto;
 }
