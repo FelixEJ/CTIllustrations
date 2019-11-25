@@ -58,7 +58,7 @@ ul li, li p /* etc */ {
 }
 
 html {
-    font-family: 'Yantramanav', Arial, sans-serif;
+    font-family: 'Roboto Slab', Georgia, serif;
     color: #202020;
     max-width: 100%;
 }
@@ -73,7 +73,7 @@ header h1 {
 }
 
 h2{
-    font-family: 'Yantramanav', Georgia, sans-serif;
+    font-family: 'Roboto Slab', Georgia, serif;
     color: #202020;
     font-size: 2em;
     padding: 5px 0px 5px 10px;
@@ -81,7 +81,7 @@ h2{
 }
 
 h3{
-    font-family: 'Yantramanav', Georgia, sans-serif;
+    font-family: 'Roboto Slab', Georgia, serif;
     color: #202020;
     font-size: 1.5em;
     padding: 5px 0px 5px 10px;
@@ -94,10 +94,23 @@ h3{
 /*<------------------ Start images, borders and backgrounds--------------------->*/
 
 body {
-    background-color: #ffffff;
     max-width: 100%;
     overflow-x: hidden;
     position: relative;
+    font-family: 'Roboto Slab';
+
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: auto, 100%;
+    -moz-background-size: auto, 100%;
+    -o-background-size: auto, 100%;
+    background-size: auto, 100%;
+    background-position: center;
+}
+
+.fixed-bg {
+    
 }
 
 header {
@@ -278,6 +291,10 @@ nav a.active {
     .gallery {
         height: 500px;
     }
+
+    img.logo {
+        width: 80%;
+    }    
 }
 
 @media only screen and (max-width: 500px) {
@@ -287,6 +304,10 @@ nav a.active {
 
     .gallery {
         height: 300px;
+    }
+
+    img.logo {
+        width: 90%;
     }
 }
 
@@ -299,7 +320,7 @@ nav a.active {
 
 .contact_blurb {
     width: 70%;
-    text-align: center;
+    text-align: left;
     margin: auto;
 }
 
