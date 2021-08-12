@@ -109,10 +109,6 @@ body {
     background-position: center;
 }
 
-.fixed-bg {
-    
-}
-
 header {
     text-align: center;
 }
@@ -322,6 +318,8 @@ nav a.active {
     width: 70%;
     text-align: left;
     margin: auto;
+    line-height: 1.2;
+    color: #36454f;
 }
 
 /*<------------------ Button --------------------->*/
