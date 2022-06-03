@@ -134,7 +134,7 @@ table {
 /*<------------------ Start Font --------------------->*/
 
 ul li, li p /* etc */ {
-  font-size: 1em;
+  font-size: 1.1em;
   line-height: 1.2;
 }
 
@@ -165,7 +165,14 @@ h3 {
   font-family: "Roboto Slab", Georgia, serif;
   color: #202020;
   font-size: 1.5em;
-  padding: 5px 0px 5px 10px;
+  overflow: visible;
+  text-align: center;
+
+}
+p {
+  font-family: "Roboto Slab", Georgia, serif;
+  color: #202020;
+  font-size: 1.2em;
   overflow: visible;
   text-align: center;
 }
@@ -404,10 +411,12 @@ nav a.active {
 
 .store_links {
   text-align: center;
+  padding-bottom: 30px;
 }
 .store_links a{
   text-decoration: none;
   margin-top: 10px;
+  padding-bottom: 30px;
 }
 
 
